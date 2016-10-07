@@ -6,9 +6,61 @@ body {
   background-size: cover;
 }
 
+ul {
+  list-style-type: none;
+}
+
+.row {
+  margin: 0px !important;
+}
+
 .img-centered {
-  padding-top: 5em;
+  padding-top: 3em;
 	width:25em;
 	height:auto;
 	margin:0 auto;
+}
+
+.img-button {
+  position: fixed;
+  top: 4em;
+  width: 20em;
+}
+.img-button1 {
+  position: fixed;
+  top: 12em;
+  width: 20em;
+}
+.img-button2 {
+  position: fixed;
+  top: 20em;
+  width: 20em;
+}
+.price-image {
+  padding-top: 0.5em;
+  width: 30em;
+  height:auto;
+	margin:0 auto;
+}
+.content {
+  padding-top: 3em;
+}
+.nav-img {
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  width: 6em;
+  height: auto;
+}
+.img1 {
+  left: 14em;
+}
+.img2 {
+  left: 10em;
+}
+.img3 {
+  right: 14em;
+}
+.img4 {
+  right: 10em;
 }
