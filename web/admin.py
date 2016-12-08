@@ -1,3 +1,7 @@
 from django.contrib import admin
+from web.models import WebApplication
 
-# Register your models here.
+class WebAdmin(admin.ModelAdmin):
+    list_display = ('title', 'counter')
+
+admin.site.register(WebApplication, WebAdmin)

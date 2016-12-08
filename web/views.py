@@ -1,10 +1,15 @@
 from django.shortcuts import render
+from web.models import WebApplication
 from pages.models import Page
 from django.http import Http404
 
 def index(request):
     """Home Page."""
-    return render(request, 'web/index.html', {})
+    data = {"settings": None}
+    settings = WebApplication.objects.all()
+    if settings.count():
+        data["settings"] = settings[0]
+    return render(request, 'web/index.html', data)
 
 def page(request, slug):
     try:

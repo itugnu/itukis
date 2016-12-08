@@ -33,6 +33,9 @@
   <div class="col-md-12 text-center">
     <img src="{% static 'images/prices.png' %}" class="img-responsive price-image" alt="Fiyat Listesi">
   </div>
+  <div class="col-md-12 text-center">
+    Toplam Başvuru: {{ settings.counter }} / {{ settings.counter_limit }}
+  </div>
 </div>
 
 {% endblock %}
